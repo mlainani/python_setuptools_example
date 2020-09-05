@@ -1,13 +1,16 @@
-# A working example of a Python3 module with an executable script created using setuptools
+# A working example of a Python33 module with an executable script created using setuptools
 
-python -m venv venv
+python3 -m venv venv
 
 source venv/bin/activate
 
-python setup.py bdist_wheel
+pip3 install --upgrade setuptools wheel
 
-python setup.py develop
+python3 setup.py bdist_wheel
 
-python setup.py develop --uninstall
+python3 setup.py develop
+
+python3 setup.py develop --uninstall
 
 deactivate
+
