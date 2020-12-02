@@ -1,0 +1,21 @@
+name: greeter
+version: '0.1'
+summary: A friendly greeter
+description: |
+  A friendly greeter
+
+grade: devel
+confinement: devmode
+base: core18
+
+architectures:
+  - build-on: armhf
+
+apps:
+  say-hello:
+    command: bin/say-hello
+
+parts:
+  say-hello:
+    plugin: python
+    source: .

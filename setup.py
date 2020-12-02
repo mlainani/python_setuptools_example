@@ -8,7 +8,7 @@ setup(
 
     entry_points={
         "console_scripts": [
-            "say_hello = greeter.hello:say_hello"
+            "say-hello = greeter.hello:say_hello"
         ]
     }
 
